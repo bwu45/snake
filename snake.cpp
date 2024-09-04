@@ -50,7 +50,7 @@ void draw()
             }
             else if (i == y && j == x)
             {
-                std::cout << "O";
+                std::cout << "@";
             }
             else if (i == fruitY && j == fruitX)
             {
@@ -145,7 +145,7 @@ void logic()
         break;
     }
 
-    if (x < 0 || x > WIDTH || y < 0 || y > HEIGHT)
+    if (x <= 0 || x >= WIDTH-1 || y < 0 || y > HEIGHT)
     {
         gameOver = true;
     }
@@ -175,7 +175,7 @@ int main(int argc, char const *argv[])
         draw();
         input();
         logic();
-        Sleep(10);
+        Sleep(100);
     }
     std::cout << "GAME OVER" << std::endl;
     std::getchar();
