@@ -1,6 +1,6 @@
 # Snake* 
-Simple snake game in the console.
-Loosely followed a tutorial
+Simple snake game in the console.\n
+Loosely followed a tutorial.\n
 First game!!! 😀
 
 # Learning Objectives 
