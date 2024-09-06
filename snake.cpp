@@ -36,17 +36,17 @@ void draw()
 
     for (int i = 0; i < HEIGHT; i++)
     {
-        std::cout << "#";
+        std::cout << "W";
     }
     std::cout << std::endl;
 
-    for (int i = 0; i < HEIGHT; i++)
+    for (int i = 0; i < WIDTH; i++)
     {
         for (int j = 0; j < WIDTH; j++)
         {
-            if (j == 0 || j == (WIDTH - 1))
+            if (j == 0 || j == (HEIGHT - 1))
             {
-                std::cout << "#";
+                std::cout << "N";
             }
             else if (i == y && j == x)
             {
@@ -54,7 +54,7 @@ void draw()
             }
             else if (i == fruitY && j == fruitX)
             {
-                std::cout << "F";
+                std::cout << "A";
             }
             else
             {
@@ -78,7 +78,7 @@ void draw()
 
     for (int i = 0; i < WIDTH; i++)
     {
-        std::cout << "#";
+        std::cout << "W";
     }
     std::cout << std::endl;
     std::cout << std::endl
@@ -145,14 +145,14 @@ void logic()
         break;
     }
 
-    if (x <= 0 || x >= WIDTH-1 || y < 0 || y > HEIGHT)
+    if (x < 0 || x > WIDTH-1 || y < 0 || y > HEIGHT)
     {
         gameOver = true;
     }
 
     for (int i = 0; i < nTail; i++)
     {
-        if (x == tailX[i] && y == tailY[i])
+        if ((x == tailX[i] && y == tailY[i]) || score == 3600)
         {
             gameOver = true;
         }
