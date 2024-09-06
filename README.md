@@ -14,3 +14,8 @@
 2. WASD to move. 
 3. Program should display score alongside gameplay.
 4. After game over, press any key to exit. 
+
+#Compiling 
+```
+g++ -o snake.exe snake.cpp
+```
