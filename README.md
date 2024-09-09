@@ -4,10 +4,10 @@
 - First game!!! yippie!! 🐍🐍🐍
 
 # Learning Objectives 
+- MAKE A FUNCTIONAL GAME
 - enums
 - functions
-- reading keyboard inputs
-- very basic, fundamental coding practices
+- nested loops 
 
 # Instructions
 1. Game doesn't start until you hit a direction. 
